@@ -1,1 +1,1 @@
-type HelloWorld = any // expected to be a string
+type HelloWorlds = string // expected to be a string
