@@ -1,1 +1,2 @@
-type MyAwaited = any
+// type MyAwaited<T extends Promise<any>> = T extends Promise<infer R> ? R extends Promise<any> ? MyAwaited<R>: R : never;
+type ExampleType<T extends Promise<any>> = T extends Promise<infer R>? R extends Promise<any>? ExampleType<R>:R : never

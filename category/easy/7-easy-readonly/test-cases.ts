@@ -1,7 +1,7 @@
 import { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
-  Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>,
+  Expect<Equal<aMyReadonly<Todo1>, Readonly<Todo1>>>,
 ]
 
 interface Todo1 {
